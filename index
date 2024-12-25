@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attractive Website</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Navbar styles */
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .navbar {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+    .navbar li {
+      margin: 0 20px;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: color 0.3s;
+    }
+    .navbar a:hover {
+      color: #4facfe;
+    }
+
+    /* Hero section styles */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+    .hero button {
+      background: #ff9800;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1em;
+      color: #fff;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .hero button:hover {
+      background: #e68a00;
+      transform: scale(1.1);
+    }
+
+    /* About and Contact sections */
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    section p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Footer styles */
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    }
+    footer p {
+      font-size: 1em;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="hero" id="home">
+    <h1>Welcome to My Attractive Website</h1>
+    <p>Experience stunning visuals, smooth animations, and a clean design!</p>
+    <button id="heroBtn">Get Started</button>
+  </div>
+  <section id="about">
+    <h2>About</h2>
+    <p>This website showcases how you can create an engaging user experience with modern HTML, CSS, and a touch of JavaScript.</p>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: contact@example.com</p>
+  </section>
+  <footer>
+    <p>&copy; 2024 Attractive Website | Designed with ❤️</p>
+  </footer>
+  <script>
+    document.getElementById('heroBtn').addEventListener('click', () => {
+      alert('Welcome! Explore the website to learn more.');
+    });
+  </script>
+</body>
+</html>
